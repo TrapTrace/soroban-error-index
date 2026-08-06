@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SorobanErrorEntry",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "category",
+    "error_code",
+    "verified",
+    "summary",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "category": {
+      "type": "string",
+      "enum": ["host-error", "cli-error", "rpc-error", "sdk-error"]
+    },
+    "error_code": {
+      "type": ["string", "integer"]
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "soroban_version": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

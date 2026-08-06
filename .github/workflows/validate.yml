@@ -1,0 +1,27 @@
+name: Validate TrapTrace Index
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate Entries Against Schema
+        run: |
+          python tools/validate_schema.py
+
+      - name: Test Search Tool
+        run: |
+          python tools/search.py "budget"
+          python tools/search.py --json

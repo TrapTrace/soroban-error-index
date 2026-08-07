@@ -1,22 +1,28 @@
-# TrapTrace — Soroban Error Index (`soroban-error-index`)
+<div align="center">
 
-![CI Validation](https://github.com/TrapTrace/soroban-error-index/actions/workflows/validate.yml/badge.svg)
-![License](https://img.shields.io/badge/License-MIT-teal.svg)
-![Status](https://img.shields.io/badge/Status-Verified--Entries-orange.svg)
+# ⚡ TrapTrace — Soroban Error Index
 
-**TrapTrace Error Index** is a structured, contributor-extensible, searchable knowledge base of real Soroban host, CLI, RPC, and SDK errors mapped to root cause analysis, reproduction steps, and verified fixes.
+**A structured, searchable knowledge base of Soroban host, CLI, RPC, and SDK errors mapped to root cause analysis and verified fixes.**
+
+[![CI Validation](https://img.shields.io/github/actions/workflow/status/TrapTrace/soroban-error-index/validate.yml?branch=main&style=flat-square&color=2FA98C&label=CI%20Validation)](https://github.com/TrapTrace/soroban-error-index/actions)
+[![Schema](https://img.shields.io/badge/Schema-Draft%2007-1B1F23?style=flat-square)](./schema/entry.schema.json)
+[![Catalog Entries](https://img.shields.io/badge/Entries-10%20Cataloged-E2984B?style=flat-square)](#-repository-structure)
+[![License](https://img.shields.io/badge/License-MIT-2FA98C?style=flat-square)](./LICENSE)
+[![Stellar Wave](https://img.shields.io/badge/Drips%20Wave-8%20Target-E2984B?style=flat-square)](https://drips.network)
+
+</div>
 
 ---
 
 ## 🎯 Purpose
 
-Soroban developers frequently encounter cryptic VM traps, RPC simulation failures, and CLI execution errors. Stellar's official documentation explains transaction flow models conceptually, but is not indexed or searchable by exact error strings.
+Soroban smart contract developers frequently hit cryptic WASM execution traps, RPC simulation errors, and CLI authorization failures. Stellar's official documentation explains transaction flow concepts, but is not indexed or searchable by literal error strings.
 
-`soroban-error-index` solves this gap by serving as a structured catalog containing:
-- Exact error strings & codes.
-- Honest verification status (`verified: true | false`).
-- Reproducible contract and CLI snippets.
-- Explicit step-by-step resolution steps.
+`soroban-error-index` addresses this gap by serving as a structured catalog containing:
+- **Exact Error Strings & Codes:** Machine-readable YAML frontmatter schema.
+- **Verification Status (`verified: true`):** Empirical testnet/RPC verification logs.
+- **Reproducible Snippets:** Contract Rust, CLI invocation, and RPC payload examples.
+- **Step-by-Step Fixes:** Actionable resolution pathways.
 
 ---
 

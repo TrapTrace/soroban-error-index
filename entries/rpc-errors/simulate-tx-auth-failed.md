@@ -23,7 +23,42 @@ soroban_version: "21.0.0"
 
 ## Reproduction Steps
 
-Pass a signature from keypair B to a function demanding `address_a.require_auth()`.
+1. Submit a `simulateTransaction` request with an unsigned or improperly authorized transaction envelope XDR:
+
+```bash
+curl -s -X POST https://soroban-testnet.stellar.org \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "simulateTransaction",
+    "params": {
+      "transaction": "<UNSIGNED_TRANSACTION_XDR>"
+    }
+  }'
+```
+
+2. Expected JSON-RPC Response:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "error": "HostError: Error(Auth, InvalidAction)",
+    "latestLedger": 4018522
+  }
+}
+```
+
+3. Rust / SDK Reproduction:
+
+```rust
+// Invoking contract method enforcing require_auth with keypair B instead of Keypair A
+pub fn transfer(env: Env, from: Address, to: Address, amount: i128) {
+    from.require_auth(); // Fails simulation if 'from' signature is missing or mismatched
+}
+```
 
 ## Solutions
 
@@ -33,3 +68,4 @@ Pass a signature from keypair B to a function demanding `address_a.require_auth(
 ## References
 
 - [Soroban Auth Framework Overview](https://developers.stellar.org/docs/build/smart-contracts/authorization)
+

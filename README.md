@@ -67,6 +67,29 @@ python tools/search.py --json
 
 ---
 
+## 🌐 The TrapTrace Ecosystem
+
+`soroban-error-index` is the core content foundation of the **TrapTrace** developer diagnostics ecosystem:
+
+| Repository / Tool | Purpose | Status |
+|---|---|---|
+| 📖 **[`soroban-error-index`](https://github.com/TrapTrace/soroban-error-index)** | Machine-readable error catalog with testnet-verified reproduction steps and fixes | **Active (10 verified entries)** |
+| 🛠️ **[`soroban-error-cli`](https://github.com/TrapTrace/soroban-error-cli)** | Operational CLI tool (`traptrace`) with live RPC inspector, simulation debugger, and storage auditor | **Published** |
+| ⚡ **[`soroban-error-explorer`](https://github.com/TrapTrace/soroban-error-explorer)** | Web search UI & Live Diagnostics Studio deployed at [traptrace-explorer.vercel.app](https://traptrace-explorer.vercel.app) | **Live on Vercel** |
+
+---
+
+## 🔄 Automated Index-to-Explorer Synchronization
+
+To keep the web explorer in sync with newly contributed error entries:
+
+```bash
+# Regenerates src/data/entries.json in soroban-error-explorer
+python tools/sync_explorer.py
+```
+
+---
+
 ## 🧪 Validating Entries
 
 Run the built-in validator to check that all entries adhere to `schema/entry.schema.json`:
@@ -86,3 +109,4 @@ We welcome community contributions! Please read [`CONTRIBUTING.md`](./CONTRIBUTI
 ## 📄 License
 
 Distributed under the MIT License. See [`LICENSE`](./LICENSE) for details.
+

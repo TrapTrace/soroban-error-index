@@ -78,6 +78,17 @@ def validate_file(filepath):
     if "tags" in frontmatter and not isinstance(frontmatter["tags"], list):
         errors.append("Field 'tags' must be a list.")
 
+    if "severity" in frontmatter and frontmatter["severity"] not in ["info", "warning", "critical"]:
+        errors.append(f"Invalid 'severity' '{frontmatter['severity']}': must be one of ['info', 'warning', 'critical']")
+
+    if "related_entries" in frontmatter:
+        if not isinstance(frontmatter["related_entries"], list):
+            errors.append("Field 'related_entries' must be a list of entry IDs.")
+        else:
+            for rel in frontmatter["related_entries"]:
+                if not re.match(r"^[a-z0-9-]+$", str(rel)):
+                    errors.append(f"Invalid related_entry ID format '{rel}': must be lowercase alphanumeric with hyphens.")
+
     # Check required markdown sections
     for section in REQUIRED_SECTIONS:
         if not re.search(rf"^##\s+{re.escape(section)}", body, re.MULTILINE | re.IGNORECASE):

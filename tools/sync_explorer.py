@@ -82,6 +82,8 @@ def parse_entry_file(filepath):
         "summary": meta.get("summary", ""),
         "tags": meta.get("tags", []),
         "soroban_version": meta.get("soroban_version", "21.0.0"),
+        "severity": meta.get("severity", "info"),
+        "related_entries": meta.get("related_entries", []),
         "symptoms": sections.get("symptoms", ""),
         "root_causes": sections.get("root_causes", ""),
         "reproduction_steps": repro_clean,

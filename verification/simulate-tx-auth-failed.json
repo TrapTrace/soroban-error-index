@@ -1,0 +1,22 @@
+{
+  "entry_id": "simulate-tx-auth-failed",
+  "category": "rpc-error",
+  "error_code": "RPC::SimulateAuthFailed",
+  "verified": true,
+  "verified_at": "2026-08-19T11:15:45.656814+00:00",
+  "network": "testnet",
+  "rpc_url": "https://soroban-testnet.stellar.org",
+  "latest_ledger": 4223191,
+  "status": "PASS",
+  "details": {
+    "test": "Simulate transaction with unverified auth / invalid XDR",
+    "response": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "error": "Could not unmarshal transaction",
+        "latestLedger": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "entry_id": "tx-failed-bad-seq",
+  "category": "cli-error",
+  "error_code": "txBAD_SEQ",
+  "verified": true,
+  "verified_at": "2026-08-19T11:15:38.863819+00:00",
+  "network": "testnet",
+  "rpc_url": "https://soroban-testnet.stellar.org",
+  "latest_ledger": 4223191,
+  "status": "PASS",
+  "details": {
+    "test": "Network specification check & catalog consistency",
+    "network_passphrase": "Test SDF Network ; September 2015",
+    "protocol_version": 27
+  }
+}

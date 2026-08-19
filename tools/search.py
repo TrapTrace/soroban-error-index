@@ -57,42 +57,93 @@ def load_all_entries(root_dir):
         
     return entries
 
-def search_entries(entries, query=None, category=None, verified_only=False):
-    results = []
-    
+def calculate_relevance_score(entry, query):
+    score = 0.0
+    q = query.lower().strip()
+    if not q:
+        return 1.0
+
+    id_str = str(entry.get("id", "")).lower()
+    title = str(entry.get("title", "")).lower()
+    code = str(entry.get("error_code", "")).lower()
+    summary = str(entry.get("summary", "")).lower()
+    tags = [t.lower() for t in entry.get("tags", [])]
+    body = str(entry.get("body", "")).lower()
+
+    # 1. Exact matches
+    if q == code or q == id_str:
+        score += 50.0
+    elif q in code or q in id_str:
+        score += 30.0
+
+    if q in title:
+        score += 20.0
+    if any(q in t for t in tags):
+        score += 15.0
+    if q in summary:
+        score += 10.0
+    if q in body:
+        score += 5.0
+
+    # 2. Tokenized & fuzzy matching
+    tokens = [t for t in re.split(r"[\s\:\(\)\_\-\,\#\.]+", q) if len(t) > 2]
+    for tok in tokens:
+        if tok in id_str or tok in code:
+            score += 12.0
+        elif tok in title:
+            score += 8.0
+        elif any(tok in t for t in tags):
+            score += 6.0
+        elif tok in summary:
+            score += 4.0
+        elif tok in body:
+            score += 2.0
+        else:
+            # Check near-miss fuzzy similarity with words in title and id
+            for word in re.split(r"[\s\_\-]+", f"{id_str} {title}"):
+                if len(word) >= 4 and len(tok) >= 4:
+                    # Simple char intersection / length ratio
+                    common = set(tok) & set(word)
+                    if len(common) >= len(tok) - 1:
+                        score += 3.0
+                        break
+
+    return score
+
+def search_entries(entries, query=None, category=None, verified_only=False, ranked=False):
+    scored = []
     for entry in entries:
         if category and entry.get("category") != category:
             continue
         if verified_only and not entry.get("verified", False):
             continue
-            
-        if query:
-            q = query.lower()
-            title = str(entry.get("title", "")).lower()
-            summary = str(entry.get("summary", "")).lower()
-            code = str(entry.get("error_code", "")).lower()
-            tags = " ".join(entry.get("tags", [])).lower()
-            body = str(entry.get("body", "")).lower()
-            
-            if q not in title and q not in summary and q not in code and q not in tags and q not in body:
-                continue
-                
-        results.append(entry)
-        
-    return results
+
+        if not query:
+            scored.append((entry, 1.0))
+            continue
+
+        score = calculate_relevance_score(entry, query)
+        if score > 0.0:
+            entry_copy = dict(entry)
+            entry_copy["_score"] = score
+            scored.append((entry_copy, score))
+
+    scored.sort(key=lambda x: x[1], reverse=True)
+    return [s[0] for s in scored]
 
 def main():
     parser = argparse.ArgumentParser(description="Search TrapTrace Soroban Error Index")
     parser.add_argument("query", nargs="?", default="", help="Search query (error code, text, or keyword)")
     parser.add_argument("-c", "--category", choices=["host-error", "cli-error", "rpc-error", "sdk-error"], help="Filter by category")
     parser.add_argument("-v", "--verified", action="store_true", help="Show verified entries only")
+    parser.add_argument("-r", "--rank", action="store_true", help="Display relevance score ranking for results")
     parser.add_argument("--json", action="store_true", help="Output results as JSON")
     
     args = parser.parse_args()
     
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     entries = load_all_entries(root_dir)
-    results = search_entries(entries, query=args.query, category=args.category, verified_only=args.verified)
+    results = search_entries(entries, query=args.query, category=args.category, verified_only=args.verified, ranked=args.rank)
     
     if args.json:
         # Strip body for concise output
@@ -100,6 +151,8 @@ def main():
         for r in results:
             item = dict(r)
             item.pop("body", None)
+            if not args.rank:
+                item.pop("_score", None)
             out.append(item)
         print(json.dumps(out, indent=2))
         return
@@ -107,7 +160,8 @@ def main():
     print(f"\n🔍 Found {len(results)} matching entries for query '{args.query}':\n")
     for r in results:
         verified_str = "✅ Verified" if r.get("verified") else "⚠️  Unverified"
-        print(f"📌 [{r.get('id')}] {r.get('title')}")
+        score_str = f" | Score: {r.get('_score', 0):.1f}" if args.rank else ""
+        print(f"📌 [{r.get('id')}] {r.get('title')}{score_str}")
         print(f"   Category: {r.get('category')} | Code: {r.get('error_code')} | Status: {verified_str}")
         print(f"   Summary:  {r.get('summary')}")
         print(f"   File:     {r.get('filepath')}\n")

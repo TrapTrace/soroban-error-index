@@ -7,6 +7,8 @@ verified: true
 summary: Contract execution terminated because CPU instruction count or memory allocation exceeded specified envelope limits.
 tags: [budget, cpu, memory, limits, host-error]
 soroban_version: "21.0.0"
+severity: critical
+related_entries: [sub-invocation-failed]
 ---
 
 # Host Error: CPU or Memory Execution Budget Exceeded

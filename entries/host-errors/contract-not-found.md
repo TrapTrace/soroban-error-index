@@ -7,6 +7,8 @@ verified: true
 summary: Host environment failed to locate WASM executable bytecode or instance storage for given contract ID.
 tags: [contract-id, wasm, missing, deploy, host-error]
 soroban_version: "21.0.0"
+severity: critical
+related_entries: [account-not-found, entry-archived-ttl-expired]
 ---
 
 # Host Error: Contract Code or Instance Not Found

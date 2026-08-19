@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-08-19T11:15:38.132170+00:00",
+  "network": "testnet",
+  "rpc_url": "https://soroban-testnet.stellar.org",
+  "latest_ledger": 4223191,
+  "total_entries": 10,
+  "verified_count": 10,
+  "entries": [
+    {
+      "id": "account-not-found",
+      "category": "cli-error",
+      "status": "PASS",
+      "evidence_file": "verification/account-not-found.json"
+    },
+    {
+      "id": "tx-failed-bad-seq",
+      "category": "cli-error",
+      "status": "PASS",
+      "evidence_file": "verification/tx-failed-bad-seq.json"
+    },
+    {
+      "id": "budget-exceeded",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/budget-exceeded.json"
+    },
+    {
+      "id": "contract-not-found",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/contract-not-found.json"
+    },
+    {
+      "id": "entry-archived-ttl-expired",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/entry-archived-ttl-expired.json"
+    },
+    {
+      "id": "sub-invocation-failed",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/sub-invocation-failed.json"
+    },
+    {
+      "id": "unreachable-code-reached",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/unreachable-code-reached.json"
+    },
+    {
+      "id": "simulate-tx-auth-failed",
+      "category": "rpc-error",
+      "status": "PASS",
+      "evidence_file": "verification/simulate-tx-auth-failed.json"
+    },
+    {
+      "id": "storage-key-missing",
+      "category": "rpc-error",
+      "status": "PASS",
+      "evidence_file": "verification/storage-key-missing.json"
+    },
+    {
+      "id": "value-conversion-failed",
+      "category": "sdk-error",
+      "status": "PASS",
+      "evidence_file": "verification/value-conversion-failed.json"
+    }
+  ]
+}

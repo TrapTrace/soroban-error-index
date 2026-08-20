@@ -1,15 +1,15 @@
 {
-  "entry_id": "simulate-tx-auth-failed",
-  "category": "rpc-error",
-  "error_code": "RPC::SimulateAuthFailed",
+  "entry_id": "host-invalid-action",
+  "category": "host-error",
+  "error_code": "HostError::InvalidAction",
   "verified": true,
-  "verified_at": "2026-08-20T07:56:49.765301+00:00",
+  "verified_at": "2026-08-20T07:56:47.607442+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4238055,
   "status": "PASS",
   "details": {
-    "test": "Simulate transaction with unverified auth / invalid XDR",
+    "test": "Simulate transaction with malformed domain arguments to trigger host validation error",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

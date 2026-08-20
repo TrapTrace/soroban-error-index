@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::WasmUnreachable",
   "verified": true,
-  "verified_at": "2026-08-19T11:15:44.581439+00:00",
+  "verified_at": "2026-08-20T07:56:49.056299+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4223191,
+  "latest_ledger": 4238055,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",

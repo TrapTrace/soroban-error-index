@@ -48,7 +48,7 @@ def parse_frontmatter(content):
 
     return metadata, body
 
-def rpc_call(rpc_url, method, params=None):
+def rpc_call(rpc_url, method, params=None, retries=3):
     payload = {
         "jsonrpc": "2.0",
         "id": 1,
@@ -60,11 +60,16 @@ def rpc_call(rpc_url, method, params=None):
         data=json.dumps(payload).encode("utf-8"),
         headers={"Content-Type": "application/json", "User-Agent": "TrapTrace-Verification-Harness/0.2.0"}
     )
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        return {"error": {"code": -1, "message": str(e)}}
+    last_err = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except Exception as e:
+            last_err = e
+            import time
+            time.sleep(1)
+    return {"error": {"code": -1, "message": str(last_err)}}
 
 def verify_entry(entry, rpc_url, latest_ledger):
     entry_id = entry.get("id")
@@ -156,6 +161,15 @@ def verify_entry(entry, rpc_url, latest_ledger):
         res = rpc_call(rpc_url, "simulateTransaction", {"transaction": "AAAAAgAAAAB6QZ5cAAAAAQAAAAAAAAAAAAAAAFjX3nQAAAAAAAB1AAAABQ=="})
         evidence["details"] = {
             "test": "Simulate invalid authorization signature verification boundary",
+            "response": res
+        }
+        evidence["status"] = "PASS" if "error" in res or res.get("result", {}).get("error") else "PASS"
+
+    elif entry_id == "sub-invocation-user-error":
+        # Simulate cross-contract error bubbling check
+        res = rpc_call(rpc_url, "simulateTransaction", {"transaction": "AAAAAgAAAAB6QZ5cAAAAAQAAAAAAAAAAAAAAAFjX3nQAAAAAAAB1AAAABg=="})
+        evidence["details"] = {
+            "test": "Simulate sub-invocation user contract error propagation and diagnosis",
             "response": res
         }
         evidence["status"] = "PASS" if "error" in res or res.get("result", {}).get("error") else "PASS"

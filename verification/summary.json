@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-20T11:33:15.436166+00:00",
+  "timestamp": "2026-08-20T11:55:48.834526+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4240648,
-  "total_entries": 14,
-  "verified_count": 14,
+  "latest_ledger": 4240918,
+  "total_entries": 15,
+  "verified_count": 15,
   "entries": [
     {
       "id": "account-not-found",
@@ -17,6 +17,12 @@
       "category": "cli-error",
       "status": "PASS",
       "evidence_file": "verification/tx-failed-bad-seq.json"
+    },
+    {
+      "id": "auth-invalid-signature",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/auth-invalid-signature.json"
     },
     {
       "id": "budget-exceeded",

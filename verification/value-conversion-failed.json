@@ -3,14 +3,14 @@
   "category": "sdk-error",
   "error_code": "SDK::ScValConversionError",
   "verified": true,
-  "verified_at": "2026-08-20T11:34:26.836769+00:00",
+  "verified_at": "2026-08-20T11:57:46.919658+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4240648,
+  "latest_ledger": 4240918,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",
     "network_passphrase": "Test SDF Network ; September 2015",
-    "protocol_version": 27
+    "protocol_version": 21
   }
 }

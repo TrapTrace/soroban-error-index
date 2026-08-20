@@ -1,15 +1,15 @@
 {
-  "entry_id": "simulate-tx-auth-failed",
-  "category": "rpc-error",
-  "error_code": "RPC::SimulateAuthFailed",
+  "entry_id": "auth-invalid-signature",
+  "category": "host-error",
+  "error_code": "HostError::AuthInvalidSignature",
   "verified": true,
-  "verified_at": "2026-08-20T11:57:22.814560+00:00",
+  "verified_at": "2026-08-20T11:56:00.245893+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4240918,
   "status": "PASS",
   "details": {
-    "test": "Simulate transaction with unverified auth / invalid XDR",
+    "test": "Simulate invalid authorization signature verification boundary",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

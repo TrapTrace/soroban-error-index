@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::InvalidAction",
   "verified": true,
-  "verified_at": "2026-08-20T11:56:51.298272+00:00",
+  "verified_at": "2026-08-20T12:16:55.780777+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4240918,
+  "latest_ledger": 4241164,
   "status": "PASS",
   "details": {
     "test": "Simulate transaction with malformed domain arguments to trigger host validation error",

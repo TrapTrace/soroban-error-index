@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::StorageNotFound",
   "verified": true,
-  "verified_at": "2026-08-20T11:56:59.265015+00:00",
+  "verified_at": "2026-08-20T12:17:21.734533+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4240918,
+  "latest_ledger": 4241164,
   "status": "PASS",
   "details": {
     "test": "Query non-existent storage ledger key to confirm missing value response pattern",

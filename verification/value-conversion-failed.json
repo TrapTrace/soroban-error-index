@@ -3,10 +3,10 @@
   "category": "sdk-error",
   "error_code": "SDK::ScValConversionError",
   "verified": true,
-  "verified_at": "2026-08-20T07:56:51.048235+00:00",
+  "verified_at": "2026-08-20T08:10:13.723253+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4238055,
+  "latest_ledger": 4238215,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",

@@ -3,10 +3,10 @@
   "category": "cli-error",
   "error_code": "CLI::AccountNotFound",
   "verified": true,
-  "verified_at": "2026-08-20T11:33:15.437564+00:00",
+  "verified_at": "2026-08-20T11:55:48.836042+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4240648,
+  "latest_ledger": 4240918,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",

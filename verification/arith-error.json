@@ -1,15 +1,15 @@
 {
-  "entry_id": "host-invalid-action",
+  "entry_id": "arith-error",
   "category": "host-error",
-  "error_code": "HostError::InvalidAction",
+  "error_code": "HostError::ArithDomain",
   "verified": true,
-  "verified_at": "2026-08-20T14:10:30.811069+00:00",
+  "verified_at": "2026-08-20T14:10:06.646363+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4242524,
   "status": "PASS",
   "details": {
-    "test": "Simulate transaction with malformed domain arguments to trigger host validation error",
+    "test": "Simulate integer arithmetic domain and overflow verification",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

@@ -3,10 +3,10 @@
   "category": "rpc-error",
   "error_code": "RPC::StorageKeyNotFound",
   "verified": true,
-  "verified_at": "2026-08-20T12:19:41.013273+00:00",
+  "verified_at": "2026-08-20T14:11:06.666441+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4241164,
+  "latest_ledger": 4242524,
   "status": "PASS",
   "details": {
     "test": "Query state events to verify missing storage mutation signals",
@@ -14,47 +14,12 @@
       "jsonrpc": "2.0",
       "id": 1,
       "result": {
-        "events": [
-          {
-            "type": "system",
-            "ledger": 4241155,
-            "ledgerClosedAt": "2026-08-20T12:15:31Z",
-            "contractId": "CDX54GUTW7OPGJP4VDSQSD6ITHJCQDOW2523MTCVA7767LT36Z7KLMD2",
-            "id": "0018215622022303744-0000000000",
-            "operationIndex": 0,
-            "transactionIndex": 9,
-            "txHash": "07685fab252e90eaec772af71279655a64e0961b7cee0b77f59a11a13a904bcf",
-            "inSuccessfulContractCall": true,
-            "topic": [
-              "AAAADwAAABFleGVjdXRhYmxlX3VwZGF0ZQAAAA==",
-              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACB20rqCbBtae2zAquvgWMw//Dc8IXH5DWPrt0gaKPV3vQ==",
-              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACC/q1dvtAWVL96wxQLj9mJmhgHztjERvPA0wkDOpLYkDQ=="
-            ],
-            "value": "AAAAEAAAAAEAAAAA"
-          },
-          {
-            "type": "system",
-            "ledger": 4241164,
-            "ledgerClosedAt": "2026-08-20T12:16:16Z",
-            "contractId": "CCAMAPXG37RD6BF7VG74XNERP2CMLRVMTQFDMHGLJQA6NEHDN3SDJ2TW",
-            "id": "0018215660677033984-0000000000",
-            "operationIndex": 0,
-            "transactionIndex": 15,
-            "txHash": "a00ee82f786234c064abe2feb6e474c422acc65cbe7d810746f44cf833530e98",
-            "inSuccessfulContractCall": true,
-            "topic": [
-              "AAAADwAAABFleGVjdXRhYmxlX3VwZGF0ZQAAAA==",
-              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACB20rqCbBtae2zAquvgWMw//Dc8IXH5DWPrt0gaKPV3vQ==",
-              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACC/q1dvtAWVL96wxQLj9mJmhgHztjERvPA0wkDOpLYkDQ=="
-            ],
-            "value": "AAAAEAAAAAEAAAAA"
-          }
-        ],
-        "cursor": "0018215845360566271-4294967295",
-        "latestLedger": 4241206,
-        "oldestLedger": 4120247,
-        "latestLedgerCloseTime": "1787228386",
-        "oldestLedgerCloseTime": "1786622547"
+        "events": [],
+        "cursor": "0018221574846939135-4294967295",
+        "latestLedger": 4242540,
+        "oldestLedger": 4121581,
+        "latestLedgerCloseTime": "1787235070",
+        "oldestLedgerCloseTime": "1786629229"
       }
     }
   }

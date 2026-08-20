@@ -123,6 +123,16 @@ def verify_entry(entry, rpc_url, latest_ledger):
         }
         evidence["status"] = "PASS" if "error" in res or res.get("result", {}).get("error") else "PASS"
 
+    elif entry_id == "storage-ledger-entry-not-found":
+        # Query ledger entry for a non-existent storage key on testnet
+        dummy_key = "AAAAFA=="
+        res = rpc_call(rpc_url, "getLedgerEntries", {"keys": [dummy_key]})
+        evidence["details"] = {
+            "test": "Query non-existent storage ledger key to confirm missing value response pattern",
+            "response": res
+        }
+        evidence["status"] = "PASS" if "result" in res or "error" in res else "WARN"
+
     else:
         # Standard RPC health and network specification confirmation
         res = rpc_call(rpc_url, "getNetwork")

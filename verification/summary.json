@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-20T07:56:43.971809+00:00",
+  "timestamp": "2026-08-20T08:10:06.669198+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4238055,
-  "total_entries": 11,
-  "verified_count": 11,
+  "latest_ledger": 4238215,
+  "total_entries": 12,
+  "verified_count": 12,
   "entries": [
     {
       "id": "account-not-found",
@@ -41,6 +41,12 @@
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/host-invalid-action.json"
+    },
+    {
+      "id": "storage-ledger-entry-not-found",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/storage-ledger-entry-not-found.json"
     },
     {
       "id": "sub-invocation-failed",

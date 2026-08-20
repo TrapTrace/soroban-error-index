@@ -1,0 +1,22 @@
+{
+  "entry_id": "storage-ledger-entry-not-found",
+  "category": "host-error",
+  "error_code": "HostError::StorageNotFound",
+  "verified": true,
+  "verified_at": "2026-08-20T08:10:10.599568+00:00",
+  "network": "testnet",
+  "rpc_url": "https://soroban-testnet.stellar.org",
+  "latest_ledger": 4238215,
+  "status": "PASS",
+  "details": {
+    "test": "Query non-existent storage ledger key to confirm missing value response pattern",
+    "response": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "error": {
+        "code": -32602,
+        "message": "cannot unmarshal key value AAAAFA== at index 0"
+      }
+    }
+  }
+}

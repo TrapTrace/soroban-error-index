@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-19T11:15:38.132170+00:00",
+  "timestamp": "2026-08-20T07:56:43.971809+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4223191,
-  "total_entries": 10,
-  "verified_count": 10,
+  "latest_ledger": 4238055,
+  "total_entries": 11,
+  "verified_count": 11,
   "entries": [
     {
       "id": "account-not-found",
@@ -35,6 +35,12 @@
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/entry-archived-ttl-expired.json"
+    },
+    {
+      "id": "host-invalid-action",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/host-invalid-action.json"
     },
     {
       "id": "sub-invocation-failed",

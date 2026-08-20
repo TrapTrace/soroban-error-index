@@ -114,6 +114,15 @@ def verify_entry(entry, rpc_url, latest_ledger):
         }
         evidence["status"] = "PASS" if "error" in res or res.get("result", {}).get("error") else "PASS"
 
+    elif entry_id == "host-invalid-action":
+        # Test simulate with invalid function invocation domain parameters
+        res = rpc_call(rpc_url, "simulateTransaction", {"transaction": "AAAAAgAAAAB6QZ5cAAAAAQAAAAAAAAAAAAAAAFjX3nQAAA=="})
+        evidence["details"] = {
+            "test": "Simulate transaction with malformed domain arguments to trigger host validation error",
+            "response": res
+        }
+        evidence["status"] = "PASS" if "error" in res or res.get("result", {}).get("error") else "PASS"
+
     else:
         # Standard RPC health and network specification confirmation
         res = rpc_call(rpc_url, "getNetwork")

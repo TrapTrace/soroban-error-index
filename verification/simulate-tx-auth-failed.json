@@ -3,10 +3,10 @@
   "category": "rpc-error",
   "error_code": "RPC::SimulateAuthFailed",
   "verified": true,
-  "verified_at": "2026-08-20T12:19:39.926141+00:00",
+  "verified_at": "2026-08-20T14:10:57.769302+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4241164,
+  "latest_ledger": 4242524,
   "status": "PASS",
   "details": {
     "test": "Simulate transaction with unverified auth / invalid XDR",

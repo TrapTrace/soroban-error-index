@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::ContractUserError",
   "verified": true,
-  "verified_at": "2026-08-20T12:18:41.834006+00:00",
+  "verified_at": "2026-08-20T14:10:41.015242+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4241164,
+  "latest_ledger": 4242524,
   "status": "PASS",
   "details": {
     "test": "Simulate sub-invocation user contract error propagation and diagnosis",

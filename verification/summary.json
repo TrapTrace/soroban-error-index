@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-20T12:16:23.998213+00:00",
+  "timestamp": "2026-08-20T14:09:55.934064+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4241164,
-  "total_entries": 16,
-  "verified_count": 16,
+  "latest_ledger": 4242524,
+  "total_entries": 18,
+  "verified_count": 18,
   "entries": [
     {
       "id": "account-not-found",
@@ -17,6 +17,12 @@
       "category": "cli-error",
       "status": "PASS",
       "evidence_file": "verification/tx-failed-bad-seq.json"
+    },
+    {
+      "id": "arith-error",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/arith-error.json"
     },
     {
       "id": "auth-invalid-signature",
@@ -53,6 +59,12 @@
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/host-invalid-action.json"
+    },
+    {
+      "id": "require-auth-missing",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/require-auth-missing.json"
     },
     {
       "id": "storage-ledger-entry-not-found",

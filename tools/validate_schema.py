@@ -96,6 +96,21 @@ def validate_file(filepath):
 
     return errors
 
+def validate_all(root_dir=None):
+    """Validate all markdown entries and return (is_valid, errors_dict)."""
+    if not root_dir:
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    entries_pattern = os.path.join(root_dir, "entries", "**", "*.md")
+    files = glob.glob(entries_pattern, recursive=True)
+    
+    all_errors = {}
+    for filepath in sorted(files):
+        errs = validate_file(filepath)
+        if errs:
+            all_errors[filepath] = errs
+            
+    return (len(all_errors) == 0, all_errors)
+
 def main():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     entries_pattern = os.path.join(root_dir, "entries", "**", "*.md")
@@ -110,18 +125,19 @@ def main():
 
     print(f"🔍 Validating {total_files} entry files...")
 
+    is_valid, all_errors = validate_all(root_dir)
+
     for filepath in sorted(files):
         rel_path = os.path.relpath(filepath, root_dir)
-        errors = validate_file(filepath)
-        if errors:
+        if filepath in all_errors:
             failed += 1
             print(f"❌ {rel_path}:")
-            for err in errors:
+            for err in all_errors[filepath]:
                 print(f"   - {err}")
         else:
             print(f"✅ {rel_path}")
 
-    if failed > 0:
+    if not is_valid:
         print(f"\n❌ Validation failed: {failed}/{total_files} files have errors.")
         sys.exit(1)
 

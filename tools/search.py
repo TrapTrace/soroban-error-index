@@ -110,7 +110,8 @@ def calculate_relevance_score(entry, query):
 
     return score
 
-def search_entries(entries, query=None, category=None, verified_only=False, ranked=False):
+def search_entries(entries, query=None, category=None, verified_only=False, ranked=False, rank=False):
+    is_ranked = ranked or rank
     scored = []
     for entry in entries:
         if category and entry.get("category") != category:

@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::StorageValueExceedsLimit",
   "verified": true,
-  "verified_at": "2026-08-20T14:10:21.750896+00:00",
+  "verified_at": "2026-08-21T11:35:04.289032+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4242524,
+  "latest_ledger": 4257911,
   "status": "PASS",
   "details": {
     "test": "Simulate storage footprint boundary to verify byte-quota enforcement",

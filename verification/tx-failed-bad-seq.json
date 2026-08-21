@@ -3,10 +3,10 @@
   "category": "cli-error",
   "error_code": "txBAD_SEQ",
   "verified": true,
-  "verified_at": "2026-08-20T14:09:58.725721+00:00",
+  "verified_at": "2026-08-21T11:34:58.277271+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4242524,
+  "latest_ledger": 4257911,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",

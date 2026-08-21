@@ -1,0 +1,25 @@
+{
+  "entry_id": "invalid-chain-id",
+  "category": "cli-error",
+  "error_code": "CLI::InvalidChainId",
+  "verified": true,
+  "verified_at": "2026-08-21T11:34:57.626649+00:00",
+  "network": "testnet",
+  "rpc_url": "https://soroban-testnet.stellar.org",
+  "latest_ledger": 4257911,
+  "status": "PASS",
+  "details": {
+    "test": "Verify network passphrase validation against node identity",
+    "expected_passphrase": "Test SDF Network ; September 2015",
+    "actual_passphrase": "Test SDF Network ; September 2015",
+    "response": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "friendbotUrl": "https://friendbot.stellar.org/",
+        "passphrase": "Test SDF Network ; September 2015",
+        "protocolVersion": 27
+      }
+    }
+  }
+}

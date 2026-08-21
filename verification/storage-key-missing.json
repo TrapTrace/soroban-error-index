@@ -3,10 +3,10 @@
   "category": "rpc-error",
   "error_code": "RPC::StorageKeyNotFound",
   "verified": true,
-  "verified_at": "2026-08-20T14:11:06.666441+00:00",
+  "verified_at": "2026-08-21T11:35:18.735599+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4242524,
+  "latest_ledger": 4257911,
   "status": "PASS",
   "details": {
     "test": "Query state events to verify missing storage mutation signals",
@@ -14,12 +14,30 @@
       "jsonrpc": "2.0",
       "id": 1,
       "result": {
-        "events": [],
-        "cursor": "0018221574846939135-4294967295",
-        "latestLedger": 4242540,
-        "oldestLedger": 4121581,
-        "latestLedgerCloseTime": "1787235070",
-        "oldestLedgerCloseTime": "1786629229"
+        "events": [
+          {
+            "type": "system",
+            "ledger": 4257907,
+            "ledgerClosedAt": "2026-08-21T11:34:30Z",
+            "contractId": "CCGD3WMXBQPMTJPPULVONC4QT37IDXQINFEH5W4F4X4P5JEQT46WIPXV",
+            "id": "0018287571314446336-0000000000",
+            "operationIndex": 0,
+            "transactionIndex": 9,
+            "txHash": "cf1fc61f4e5204f2be948dbc6a57fdf4610de7e0e5e79de5c21f652943c86618",
+            "inSuccessfulContractCall": true,
+            "topic": [
+              "AAAADwAAABFleGVjdXRhYmxlX3VwZGF0ZQAAAA==",
+              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACB20rqCbBtae2zAquvgWMw//Dc8IXH5DWPrt0gaKPV3vQ==",
+              "AAAAEAAAAAEAAAACAAAADwAAAARXYXNtAAAADQAAACC/q1dvtAWVL96wxQLj9mJmhgHztjERvPA0wkDOpLYkDQ=="
+            ],
+            "value": "AAAAEAAAAAEAAAAA"
+          }
+        ],
+        "cursor": "0018287618559049727-4294967295",
+        "latestLedger": 4257917,
+        "oldestLedger": 4136958,
+        "latestLedgerCloseTime": "1787312120",
+        "oldestLedgerCloseTime": "1786706236"
       }
     }
   }

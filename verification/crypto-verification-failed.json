@@ -1,15 +1,15 @@
 {
-  "entry_id": "host-invalid-action",
+  "entry_id": "crypto-verification-failed",
   "category": "host-error",
-  "error_code": "HostError::InvalidAction",
+  "error_code": "HostError::CryptoError",
   "verified": true,
-  "verified_at": "2026-08-21T11:35:08.440106+00:00",
+  "verified_at": "2026-08-21T11:35:06.320242+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4257911,
   "status": "PASS",
   "details": {
-    "test": "Simulate transaction with malformed domain arguments to trigger host validation error",
+    "test": "Simulate cryptographic host primitive verification boundary",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

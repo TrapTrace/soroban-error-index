@@ -1,15 +1,15 @@
 {
-  "entry_id": "host-invalid-action",
-  "category": "host-error",
-  "error_code": "HostError::InvalidAction",
+  "entry_id": "wasm-verification-failed",
+  "category": "cli-error",
+  "error_code": "CLI::WasmVerificationFailed",
   "verified": true,
-  "verified_at": "2026-08-21T11:35:08.440106+00:00",
+  "verified_at": "2026-08-21T11:34:59.038737+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4257911,
   "status": "PASS",
   "details": {
-    "test": "Simulate transaction with malformed domain arguments to trigger host validation error",
+    "test": "Simulate contract WASM bytecode opcode validation boundary",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

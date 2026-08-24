@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-21T11:34:55.893512+00:00",
+  "timestamp": "2026-08-24T10:25:15.141841+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4257911,
-  "total_entries": 21,
-  "verified_count": 21,
+  "latest_ledger": 4308820,
+  "total_entries": 29,
+  "verified_count": 29,
   "entries": [
     {
       "id": "account-not-found",
@@ -79,10 +79,40 @@
       "evidence_file": "verification/host-invalid-action.json"
     },
     {
+      "id": "instance-storage-expired",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/instance-storage-expired.json"
+    },
+    {
+      "id": "invalid-scval-tag",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/invalid-scval-tag.json"
+    },
+    {
+      "id": "map-key-not-found",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/map-key-not-found.json"
+    },
+    {
+      "id": "option-unwrap-none",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/option-unwrap-none.json"
+    },
+    {
       "id": "require-auth-missing",
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/require-auth-missing.json"
+    },
+    {
+      "id": "storage-key-size-exceeds-limit",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/storage-key-size-exceeds-limit.json"
     },
     {
       "id": "storage-ledger-entry-not-found",
@@ -103,10 +133,22 @@
       "evidence_file": "verification/sub-invocation-user-error.json"
     },
     {
+      "id": "temporary-storage-expired",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/temporary-storage-expired.json"
+    },
+    {
       "id": "unreachable-code-reached",
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/unreachable-code-reached.json"
+    },
+    {
+      "id": "vec-index-out-of-bounds",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/vec-index-out-of-bounds.json"
     },
     {
       "id": "wasm-memory-exhausted",
@@ -125,6 +167,12 @@
       "category": "rpc-error",
       "status": "PASS",
       "evidence_file": "verification/storage-key-missing.json"
+    },
+    {
+      "id": "scval-type-conversion-error",
+      "category": "sdk-error",
+      "status": "PASS",
+      "evidence_file": "verification/scval-type-conversion-error.json"
     },
     {
       "id": "value-conversion-failed",

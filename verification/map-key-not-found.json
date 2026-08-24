@@ -1,15 +1,15 @@
 {
-  "entry_id": "wasm-memory-exhausted",
+  "entry_id": "map-key-not-found",
   "category": "host-error",
-  "error_code": "HostError::MemoryExhausted",
+  "error_code": "HostError::MapKeyNotFound",
   "verified": true,
-  "verified_at": "2026-08-24T10:33:05.377618+00:00",
+  "verified_at": "2026-08-24T10:30:37.587663+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4308820,
   "status": "PASS",
   "details": {
-    "test": "Simulate WASM memory page allocation and linear memory limit check",
+    "test": "Simulate SDK Map key lookup failure unwrapping",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

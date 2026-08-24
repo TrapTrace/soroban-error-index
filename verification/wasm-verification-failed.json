@@ -3,10 +3,10 @@
   "category": "cli-error",
   "error_code": "CLI::WasmVerificationFailed",
   "verified": true,
-  "verified_at": "2026-08-21T11:34:59.038737+00:00",
+  "verified_at": "2026-08-24T10:25:57.735612+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4257911,
+  "latest_ledger": 4308820,
   "status": "PASS",
   "details": {
     "test": "Simulate contract WASM bytecode opcode validation boundary",

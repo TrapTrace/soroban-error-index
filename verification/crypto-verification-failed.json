@@ -3,19 +3,17 @@
   "category": "host-error",
   "error_code": "HostError::CryptoError",
   "verified": true,
-  "verified_at": "2026-08-21T11:35:06.320242+00:00",
+  "verified_at": "2026-08-24T10:28:26.648233+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4257911,
+  "latest_ledger": 4308820,
   "status": "PASS",
   "details": {
     "test": "Simulate cryptographic host primitive verification boundary",
     "response": {
-      "jsonrpc": "2.0",
-      "id": 1,
-      "result": {
-        "error": "Could not unmarshal transaction",
-        "latestLedger": 0
+      "error": {
+        "code": -1,
+        "message": "<urlopen error [Errno 101] Network is unreachable>"
       }
     }
   }

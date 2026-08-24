@@ -1,15 +1,15 @@
 {
-  "entry_id": "wasm-memory-exhausted",
+  "entry_id": "instance-storage-expired",
   "category": "host-error",
-  "error_code": "HostError::MemoryExhausted",
+  "error_code": "HostError::InstanceStorageExpired",
   "verified": true,
-  "verified_at": "2026-08-24T10:33:05.377618+00:00",
+  "verified_at": "2026-08-24T10:30:23.185222+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4308820,
   "status": "PASS",
   "details": {
-    "test": "Simulate WASM memory page allocation and linear memory limit check",
+    "test": "Simulate contract instance archival and restore footprint requirement",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

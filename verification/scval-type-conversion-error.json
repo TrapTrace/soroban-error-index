@@ -1,15 +1,15 @@
 {
-  "entry_id": "wasm-memory-exhausted",
-  "category": "host-error",
-  "error_code": "HostError::MemoryExhausted",
+  "entry_id": "scval-type-conversion-error",
+  "category": "sdk-error",
+  "error_code": "SDK::ScValConversionFailed",
   "verified": true,
-  "verified_at": "2026-08-24T10:33:05.377618+00:00",
+  "verified_at": "2026-08-24T10:33:47.406531+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4308820,
   "status": "PASS",
   "details": {
-    "test": "Simulate WASM memory page allocation and linear memory limit check",
+    "test": "Simulate argument ScVal deserialization boundary",
     "response": {
       "jsonrpc": "2.0",
       "id": 1,

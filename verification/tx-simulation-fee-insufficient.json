@@ -1,9 +1,9 @@
 {
-  "entry_id": "account-not-found",
-  "category": "cli-error",
-  "error_code": "CLI::AccountNotFound",
+  "entry_id": "tx-simulation-fee-insufficient",
+  "category": "rpc-error",
+  "error_code": "RPC::InsufficientInclusionFee",
   "verified": true,
-  "verified_at": "2026-08-27T14:16:49.132965+00:00",
+  "verified_at": "2026-08-27T14:18:09.254270+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4363328,

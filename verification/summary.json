@@ -1,16 +1,22 @@
 {
-  "timestamp": "2026-08-24T10:25:15.141841+00:00",
+  "timestamp": "2026-08-27T14:16:49.132139+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4308820,
-  "total_entries": 29,
-  "verified_count": 29,
+  "latest_ledger": 4363328,
+  "total_entries": 35,
+  "verified_count": 35,
   "entries": [
     {
       "id": "account-not-found",
       "category": "cli-error",
       "status": "PASS",
       "evidence_file": "verification/account-not-found.json"
+    },
+    {
+      "id": "contract-spec-missing",
+      "category": "cli-error",
+      "status": "PASS",
+      "evidence_file": "verification/contract-spec-missing.json"
     },
     {
       "id": "invalid-chain-id",
@@ -61,6 +67,18 @@
       "evidence_file": "verification/contract-not-found.json"
     },
     {
+      "id": "cross-contract-reentrancy-blocked",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/cross-contract-reentrancy-blocked.json"
+    },
+    {
+      "id": "crypto-curve25519-invalid-scalar",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/crypto-curve25519-invalid-scalar.json"
+    },
+    {
       "id": "crypto-verification-failed",
       "category": "host-error",
       "status": "PASS",
@@ -77,6 +95,12 @@
       "category": "host-error",
       "status": "PASS",
       "evidence_file": "verification/host-invalid-action.json"
+    },
+    {
+      "id": "instance-already-initialized",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/instance-already-initialized.json"
     },
     {
       "id": "instance-storage-expired",
@@ -139,6 +163,12 @@
       "evidence_file": "verification/temporary-storage-expired.json"
     },
     {
+      "id": "unauthorized-storage-access",
+      "category": "host-error",
+      "status": "PASS",
+      "evidence_file": "verification/unauthorized-storage-access.json"
+    },
+    {
       "id": "unreachable-code-reached",
       "category": "host-error",
       "status": "PASS",
@@ -167,6 +197,12 @@
       "category": "rpc-error",
       "status": "PASS",
       "evidence_file": "verification/storage-key-missing.json"
+    },
+    {
+      "id": "tx-simulation-fee-insufficient",
+      "category": "rpc-error",
+      "status": "PASS",
+      "evidence_file": "verification/tx-simulation-fee-insufficient.json"
     },
     {
       "id": "scval-type-conversion-error",

@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::TemporaryStorageExpired",
   "verified": true,
-  "verified_at": "2026-08-24T10:32:00.033262+00:00",
+  "verified_at": "2026-08-27T14:18:04.901708+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4308820,
+  "latest_ledger": 4363328,
   "status": "PASS",
   "details": {
     "test": "Simulate temporary storage TTL boundary and eviction verification",

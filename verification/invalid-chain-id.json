@@ -3,10 +3,10 @@
   "category": "cli-error",
   "error_code": "CLI::InvalidChainId",
   "verified": true,
-  "verified_at": "2026-08-24T10:25:33.142449+00:00",
+  "verified_at": "2026-08-27T14:16:50.289252+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4308820,
+  "latest_ledger": 4363328,
   "status": "PASS",
   "details": {
     "test": "Verify network passphrase validation against node identity",

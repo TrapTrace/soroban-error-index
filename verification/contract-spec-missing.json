@@ -1,9 +1,9 @@
 {
-  "entry_id": "account-not-found",
+  "entry_id": "contract-spec-missing",
   "category": "cli-error",
-  "error_code": "CLI::AccountNotFound",
+  "error_code": "CLI::ContractSpecMissing",
   "verified": true,
-  "verified_at": "2026-08-27T14:16:49.132965+00:00",
+  "verified_at": "2026-08-27T14:16:49.713144+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4363328,

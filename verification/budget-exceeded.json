@@ -3,10 +3,10 @@
   "category": "host-error",
   "error_code": "HostError::BudgetExceeded",
   "verified": true,
-  "verified_at": "2026-08-24T10:26:50.268811+00:00",
+  "verified_at": "2026-08-27T14:17:53.172575+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
-  "latest_ledger": 4308820,
+  "latest_ledger": 4363328,
   "status": "PASS",
   "details": {
     "test": "Network specification check & catalog consistency",

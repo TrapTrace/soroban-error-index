@@ -3,7 +3,7 @@ id: instance-storage-expired
 title: Host Error - Contract Instance and Executable Storage Archived
 category: host-error
 error_code: HostError::InstanceStorageExpired
-verified: true
+verified: false
 summary: Contract invocation failed because the contract instance or executable WASM bytecode exceeded its maximum live TTL and was archived by the network.
 tags: [storage, instance-storage, archival, ttl, cap-0046, restore-footprint]
 soroban_version: "21.0.0"

@@ -2,12 +2,12 @@
   "entry_id": "sub-invocation-user-error",
   "category": "host-error",
   "error_code": "HostError::ContractUserError",
-  "verified": true,
+  "verified": false,
   "verified_at": "2026-08-27T14:18:04.277359+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4363328,
-  "status": "PASS",
+  "status": "REVIEW_REQUIRED",
   "details": {
     "test": "Simulate sub-invocation user contract error propagation and diagnosis",
     "response": {
@@ -18,5 +18,8 @@
         "latestLedger": 0
       }
     }
-  }
+  },
+  "previous_status": "PASS",
+  "reviewed_at": "2026-10-08",
+  "review_note": "Recorded probes do not establish reproduction of the named error. Original response retained; error-specific execution evidence is required."
 }

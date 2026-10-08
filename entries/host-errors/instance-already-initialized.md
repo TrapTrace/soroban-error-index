@@ -3,7 +3,7 @@ id: instance-already-initialized
 title: "Host Error - Smart Contract Instance Already Initialized"
 category: host-error
 error_code: "HostError::ContractAlreadyInitialized"
-verified: true
+verified: false
 summary: "Attempting to invoke contract initialization logic on an already initialized contract instance."
 tags: [host-error, initialization, constructor, security, state]
 soroban_version: "21.0.0"

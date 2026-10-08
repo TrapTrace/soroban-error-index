@@ -3,7 +3,7 @@ id: entry-archived-ttl-expired
 title: Host Error - Storage Entry Archived or TTL Expired
 category: host-error
 error_code: HostError::EntryArchived
-verified: true
+verified: false
 summary: Attempted access to a persistent or instance storage entry whose Time-To-Live (TTL) has expired and been archived.
 tags: [storage, ttl, archive, state-archival, host-error]
 soroban_version: "21.0.0"

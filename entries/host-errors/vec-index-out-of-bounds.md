@@ -3,7 +3,7 @@ id: vec-index-out-of-bounds
 title: Host Error - Soroban SDK Vec Index Out of Bounds Panic
 category: host-error
 error_code: HostError::VecIndexOutOfBounds
-verified: true
+verified: false
 summary: Contract execution panicked because an indexing operation on a Soroban SDK Vec accessed an index greater than or equal to the vector length.
 tags: [host-error, vec, collection, index-out-of-bounds, panic, bounds-check]
 soroban_version: "21.0.0"

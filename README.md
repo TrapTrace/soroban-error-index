@@ -2,11 +2,11 @@
 
 # ⚡ TrapTrace — Soroban Error Index
 
-**A structured, searchable knowledge base of Soroban host, CLI, RPC, and SDK errors mapped to root cause analysis and verified fixes.**
+**A structured, searchable knowledge base of Soroban host, CLI, RPC, and SDK errors mapped to root cause analysis and suggested fixes.**
 
 [![CI Validation](https://img.shields.io/github/actions/workflow/status/TrapTrace/soroban-error-index/validate.yml?branch=main&style=flat-square&color=2FA98C&label=CI%20Validation)](https://github.com/TrapTrace/soroban-error-index/actions)
 [![Schema](https://img.shields.io/badge/Schema-Draft%2007-1B1F23?style=flat-square)](./schema/entry.schema.json)
-[![Catalog Entries](https://img.shields.io/badge/Entries-10%20Cataloged-E2984B?style=flat-square)](#-repository-structure)
+[![Catalog Entries](https://img.shields.io/badge/Entries-35%20Cataloged-E2984B?style=flat-square)](#-repository-structure)
 [![License](https://img.shields.io/badge/License-MIT-2FA98C?style=flat-square)](./LICENSE)
 [![Stellar Wave](https://img.shields.io/badge/Drips%20Wave-8%20Target-E2984B?style=flat-square)](https://drips.network)
 
@@ -20,7 +20,7 @@ Soroban smart contract developers frequently hit cryptic WASM execution traps, R
 
 `soroban-error-index` addresses this gap by serving as a structured catalog containing:
 - **Exact Error Strings & Codes:** Machine-readable YAML frontmatter schema.
-- **Verification Status (`verified: true`):** Empirical testnet/RPC verification logs.
+- **Verification Status:** Error-specific reproduction evidence is required. Current historical probes are retained but marked unverified.
 - **Reproducible Snippets:** Contract Rust, CLI invocation, and RPC payload examples.
 - **Step-by-Step Fixes:** Actionable resolution pathways.
 
@@ -110,3 +110,7 @@ We welcome community contributions! Please read [`CONTRIBUTING.md`](./CONTRIBUTI
 
 Distributed under the MIT License. See [`LICENSE`](./LICENSE) for details.
 
+
+## Evidence review — October 8, 2026
+
+The 35 historical records contain connectivity, lookup or malformed-input probes that do not establish the named errors. Their original responses are retained; verification flags and summaries now require review. The connectivity harness cannot convert network health or invalid XDR rejection into an error-verification PASS. See [submission scope](docs/SUBMISSION.md).

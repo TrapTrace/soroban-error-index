@@ -3,7 +3,7 @@ id: unauthorized-storage-access
 title: "Host Error - Unauthorized Contract Storage Footprint Access"
 category: host-error
 error_code: "HostError::StorageAccessUnauthorized"
-verified: true
+verified: false
 summary: "Contract execution attempted to access storage ledger keys outside its allocated ledger footprint or across contract security boundaries."
 tags: [host-error, storage, footprint, security, permissions]
 soroban_version: "21.0.0"

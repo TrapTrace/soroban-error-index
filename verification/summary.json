@@ -4,217 +4,255 @@
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4363328,
   "total_entries": 35,
-  "verified_count": 35,
+  "verified_count": 0,
   "entries": [
     {
       "id": "account-not-found",
       "category": "cli-error",
-      "status": "PASS",
-      "evidence_file": "verification/account-not-found.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/account-not-found.json",
+      "previous_status": "PASS"
     },
     {
       "id": "contract-spec-missing",
       "category": "cli-error",
-      "status": "PASS",
-      "evidence_file": "verification/contract-spec-missing.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/contract-spec-missing.json",
+      "previous_status": "PASS"
     },
     {
       "id": "invalid-chain-id",
       "category": "cli-error",
-      "status": "PASS",
-      "evidence_file": "verification/invalid-chain-id.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/invalid-chain-id.json",
+      "previous_status": "PASS"
     },
     {
       "id": "tx-failed-bad-seq",
       "category": "cli-error",
-      "status": "PASS",
-      "evidence_file": "verification/tx-failed-bad-seq.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/tx-failed-bad-seq.json",
+      "previous_status": "PASS"
     },
     {
       "id": "wasm-verification-failed",
       "category": "cli-error",
-      "status": "PASS",
-      "evidence_file": "verification/wasm-verification-failed.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/wasm-verification-failed.json",
+      "previous_status": "PASS"
     },
     {
       "id": "arith-error",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/arith-error.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/arith-error.json",
+      "previous_status": "PASS"
     },
     {
       "id": "auth-invalid-signature",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/auth-invalid-signature.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/auth-invalid-signature.json",
+      "previous_status": "PASS"
     },
     {
       "id": "budget-exceeded",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/budget-exceeded.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/budget-exceeded.json",
+      "previous_status": "PASS"
     },
     {
       "id": "contract-data-size-exceeds-limit",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/contract-data-size-exceeds-limit.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/contract-data-size-exceeds-limit.json",
+      "previous_status": "PASS"
     },
     {
       "id": "contract-not-found",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/contract-not-found.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/contract-not-found.json",
+      "previous_status": "PASS"
     },
     {
       "id": "cross-contract-reentrancy-blocked",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/cross-contract-reentrancy-blocked.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/cross-contract-reentrancy-blocked.json",
+      "previous_status": "PASS"
     },
     {
       "id": "crypto-curve25519-invalid-scalar",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/crypto-curve25519-invalid-scalar.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/crypto-curve25519-invalid-scalar.json",
+      "previous_status": "PASS"
     },
     {
       "id": "crypto-verification-failed",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/crypto-verification-failed.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/crypto-verification-failed.json",
+      "previous_status": "PASS"
     },
     {
       "id": "entry-archived-ttl-expired",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/entry-archived-ttl-expired.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/entry-archived-ttl-expired.json",
+      "previous_status": "PASS"
     },
     {
       "id": "host-invalid-action",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/host-invalid-action.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/host-invalid-action.json",
+      "previous_status": "PASS"
     },
     {
       "id": "instance-already-initialized",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/instance-already-initialized.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/instance-already-initialized.json",
+      "previous_status": "PASS"
     },
     {
       "id": "instance-storage-expired",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/instance-storage-expired.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/instance-storage-expired.json",
+      "previous_status": "PASS"
     },
     {
       "id": "invalid-scval-tag",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/invalid-scval-tag.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/invalid-scval-tag.json",
+      "previous_status": "PASS"
     },
     {
       "id": "map-key-not-found",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/map-key-not-found.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/map-key-not-found.json",
+      "previous_status": "PASS"
     },
     {
       "id": "option-unwrap-none",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/option-unwrap-none.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/option-unwrap-none.json",
+      "previous_status": "PASS"
     },
     {
       "id": "require-auth-missing",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/require-auth-missing.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/require-auth-missing.json",
+      "previous_status": "PASS"
     },
     {
       "id": "storage-key-size-exceeds-limit",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/storage-key-size-exceeds-limit.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/storage-key-size-exceeds-limit.json",
+      "previous_status": "PASS"
     },
     {
       "id": "storage-ledger-entry-not-found",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/storage-ledger-entry-not-found.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/storage-ledger-entry-not-found.json",
+      "previous_status": "PASS"
     },
     {
       "id": "sub-invocation-failed",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/sub-invocation-failed.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/sub-invocation-failed.json",
+      "previous_status": "PASS"
     },
     {
       "id": "sub-invocation-user-error",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/sub-invocation-user-error.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/sub-invocation-user-error.json",
+      "previous_status": "PASS"
     },
     {
       "id": "temporary-storage-expired",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/temporary-storage-expired.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/temporary-storage-expired.json",
+      "previous_status": "PASS"
     },
     {
       "id": "unauthorized-storage-access",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/unauthorized-storage-access.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/unauthorized-storage-access.json",
+      "previous_status": "PASS"
     },
     {
       "id": "unreachable-code-reached",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/unreachable-code-reached.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/unreachable-code-reached.json",
+      "previous_status": "PASS"
     },
     {
       "id": "vec-index-out-of-bounds",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/vec-index-out-of-bounds.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/vec-index-out-of-bounds.json",
+      "previous_status": "PASS"
     },
     {
       "id": "wasm-memory-exhausted",
       "category": "host-error",
-      "status": "PASS",
-      "evidence_file": "verification/wasm-memory-exhausted.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/wasm-memory-exhausted.json",
+      "previous_status": "PASS"
     },
     {
       "id": "simulate-tx-auth-failed",
       "category": "rpc-error",
-      "status": "PASS",
-      "evidence_file": "verification/simulate-tx-auth-failed.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/simulate-tx-auth-failed.json",
+      "previous_status": "PASS"
     },
     {
       "id": "storage-key-missing",
       "category": "rpc-error",
-      "status": "PASS",
-      "evidence_file": "verification/storage-key-missing.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/storage-key-missing.json",
+      "previous_status": "PASS"
     },
     {
       "id": "tx-simulation-fee-insufficient",
       "category": "rpc-error",
-      "status": "PASS",
-      "evidence_file": "verification/tx-simulation-fee-insufficient.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/tx-simulation-fee-insufficient.json",
+      "previous_status": "PASS"
     },
     {
       "id": "scval-type-conversion-error",
       "category": "sdk-error",
-      "status": "PASS",
-      "evidence_file": "verification/scval-type-conversion-error.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/scval-type-conversion-error.json",
+      "previous_status": "PASS"
     },
     {
       "id": "value-conversion-failed",
       "category": "sdk-error",
-      "status": "PASS",
-      "evidence_file": "verification/value-conversion-failed.json"
+      "status": "REVIEW_REQUIRED",
+      "evidence_file": "verification/value-conversion-failed.json",
+      "previous_status": "PASS"
     }
-  ]
+  ],
+  "previous_verified_count": 35,
+  "reviewed_at": "2026-10-08",
+  "review_note": "Recorded probes do not establish reproduction of the named error. Original response retained; error-specific execution evidence is required."
 }

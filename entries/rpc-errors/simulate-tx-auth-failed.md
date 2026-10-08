@@ -3,7 +3,7 @@ id: simulate-tx-auth-failed
 title: RPC Error - Simulate Transaction Authorization Verification Failed
 category: rpc-error
 error_code: RPC::SimulateAuthFailed
-verified: true
+verified: false
 summary: Simulation node failed to verify invocation authorization payload or signature footprint.
 tags: [rpc, simulateTransaction, auth, signature, rpc-error]
 soroban_version: "21.0.0"

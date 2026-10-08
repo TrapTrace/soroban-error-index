@@ -3,7 +3,7 @@ id: scval-type-conversion-error
 title: SDK Error - ScVal to Native Rust Type Conversion Failed
 category: sdk-error
 error_code: SDK::ScValConversionFailed
-verified: true
+verified: false
 summary: Soroban SDK or client library failed to convert a serialized ScVal or Val handle into the expected native Rust type (e.g. integer width mismatch or invalid symbol).
 tags: [sdk, scval, type-conversion, val, conversion, deserialization]
 soroban_version: "21.0.0"

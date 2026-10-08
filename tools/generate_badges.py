@@ -12,9 +12,9 @@ def main():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     verification_summary_path = os.path.join(root_dir, "verification", "summary.json")
     
-    total = 21
-    verified = 21
-    ledger = 4257911
+    total = 0
+    verified = 0
+    ledger = 0
     
     if os.path.exists(verification_summary_path):
         with open(verification_summary_path, "r", encoding="utf-8") as f:

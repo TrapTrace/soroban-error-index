@@ -3,7 +3,7 @@ id: account-not-found
 title: CLI Error - Identity Account Not Found on Network
 category: cli-error
 error_code: CLI::AccountNotFound
-verified: true
+verified: false
 summary: Soroban CLI configured source identity account is not funded or does not exist on the target network.
 tags: [account, keypair, fund, friendbot, cli-error]
 soroban_version: "21.0.0"

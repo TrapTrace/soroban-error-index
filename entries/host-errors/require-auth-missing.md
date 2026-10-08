@@ -3,7 +3,7 @@ id: require-auth-missing
 title: Host Error - Missing Required Invocation Authorization
 category: host-error
 error_code: HostError::AuthMissing
-verified: true
+verified: false
 summary: Contract execution halted because an operation required explicit authorization from an Address that was not provided in the invocation auth tree.
 tags: [auth, require-auth, authorization, security, permissions, host-error]
 soroban_version: "21.0.0"

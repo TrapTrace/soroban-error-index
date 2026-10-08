@@ -3,7 +3,7 @@ id: value-conversion-failed
 title: SDK Error - ScVal to Native JavaScript/Rust Value Conversion Failed
 category: sdk-error
 error_code: SDK::ScValConversionError
-verified: true
+verified: false
 summary: Soroban SDK failed to deserialize raw XDR ScVal into target programming language primitive or struct.
 tags: [sdk, scval, xdr, conversion, sdk-error]
 soroban_version: "21.0.0"

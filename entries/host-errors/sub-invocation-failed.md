@@ -3,7 +3,7 @@ id: sub-invocation-failed
 title: Host Error - Cross-Contract Sub-Invocation Failed
 category: host-error
 error_code: HostError::ContextFailed
-verified: true
+verified: false
 summary: Cross-contract call to child contract returned an unhandled error or panic.
 tags: [cross-contract, invocation, call, sub-call, host-error]
 soroban_version: "21.0.0"

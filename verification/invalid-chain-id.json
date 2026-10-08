@@ -2,12 +2,12 @@
   "entry_id": "invalid-chain-id",
   "category": "cli-error",
   "error_code": "CLI::InvalidChainId",
-  "verified": true,
+  "verified": false,
   "verified_at": "2026-08-27T14:16:50.289252+00:00",
   "network": "testnet",
   "rpc_url": "https://soroban-testnet.stellar.org",
   "latest_ledger": 4363328,
-  "status": "PASS",
+  "status": "REVIEW_REQUIRED",
   "details": {
     "test": "Verify network passphrase validation against node identity",
     "expected_passphrase": "Test SDF Network ; September 2015",
@@ -21,5 +21,8 @@
         "protocolVersion": 27
       }
     }
-  }
+  },
+  "previous_status": "PASS",
+  "reviewed_at": "2026-10-08",
+  "review_note": "Recorded probes do not establish reproduction of the named error. Original response retained; error-specific execution evidence is required."
 }

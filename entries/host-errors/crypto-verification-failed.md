@@ -3,7 +3,7 @@ id: crypto-verification-failed
 title: Host Error - Cryptographic Signature or Curve Verification Failed
 category: host-error
 error_code: HostError::CryptoError
-verified: true
+verified: false
 summary: Smart contract execution panicked during host cryptographic primitives verification (such as env.crypto().ed25519_verify) due to an invalid signature, corrupted public key, or payload mismatch.
 tags: [crypto, ed25519, secp256k1, signature, verification, curve, host-error]
 soroban_version: "21.0.0"

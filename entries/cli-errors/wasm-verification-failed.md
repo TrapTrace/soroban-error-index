@@ -3,7 +3,7 @@ id: wasm-verification-failed
 title: CLI Error - Contract WASM Module Bytecode Verification Failed
 category: cli-error
 error_code: CLI::WasmVerificationFailed
-verified: true
+verified: false
 summary: Contract upload or installation failed because the compiled WASM binary violates Soroban VM constraints, contains unsupported floating-point operations, or imports unexported host interfaces.
 tags: [wasm, bytecode, verification, deployment, install, upload, cli-error]
 soroban_version: "21.0.0"

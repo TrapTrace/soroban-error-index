@@ -151,3 +151,12 @@ trivial; planning only. Actual Wave complexity and enrollment are set by maintai
 ## Contribution
 
 Open a focused feat/fix/test/docs branch. PRs explain behavior and actual validation and include Closes #<issue_id>. Follow CONTRIBUTING.md and SECURITY.md.
+
+## Published contributor issues
+
+- [Reproduce a named auth error with a valid envelope](https://github.com/TrapTrace/soroban-error-index/issues/17) — proposed high.
+- [Reproduce a contract arithmetic panic with execution evidence](https://github.com/TrapTrace/soroban-error-index/issues/18) — proposed high.
+- [Define a reviewed verification evidence schema](https://github.com/TrapTrace/soroban-error-index/issues/19) — proposed medium.
+- [Check catalog error aliases against current Stellar sources](https://github.com/TrapTrace/soroban-error-index/issues/20) — proposed medium.
+- [Generate consumer bundles without touching sibling checkouts](https://github.com/TrapTrace/soroban-error-index/issues/21) — proposed medium.
+- [Add an evidence legend and contributor reproducer guide](https://github.com/TrapTrace/soroban-error-index/issues/22) — proposed trivial.

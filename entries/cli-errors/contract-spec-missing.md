@@ -3,7 +3,7 @@ id: contract-spec-missing
 title: "CLI Error - WASM Contract Specification (ABI) Metadata Missing or Stripped"
 category: cli-error
 error_code: "CLI::ContractSpecMissing"
-verified: true
+verified: false
 summary: "Contract WASM file deployed without embedded contract specification custom sections, preventing automated ABI decoding, binding generation, and CLI inspection."
 tags: [cli-error, abi, wasm, spec, tooling]
 soroban_version: "21.0.0"

@@ -3,7 +3,7 @@ id: tx-failed-bad-seq
 title: CLI Error - Transaction Failed Bad Sequence Number
 category: cli-error
 error_code: txBAD_SEQ
-verified: true
+verified: false
 summary: Transaction submission rejected because account sequence number did not match network sequence counter.
 tags: [sequence, nonce, transaction, txBAD_SEQ, cli-error]
 soroban_version: "21.0.0"

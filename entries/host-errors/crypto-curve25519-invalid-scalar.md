@@ -3,7 +3,7 @@ id: crypto-curve25519-invalid-scalar
 title: "Host Error - Curve25519 / Ed25519 Invalid Scalar or Point"
 category: host-error
 error_code: "HostError::CryptoScalarInvalid"
-verified: true
+verified: false
 summary: "Host cryptographic verification failed due to non-canonical point encoding, invalid scalar length, or scalar out of subgroup range."
 tags: [host-error, crypto, curve25519, ed25519, verification]
 soroban_version: "21.0.0"

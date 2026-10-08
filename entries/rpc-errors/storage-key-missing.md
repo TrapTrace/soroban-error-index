@@ -3,7 +3,7 @@ id: storage-key-missing
 title: RPC Error - Requested Ledger Storage Key Missing
 category: rpc-error
 error_code: RPC::StorageKeyNotFound
-verified: true
+verified: false
 summary: RPC getLedgerEntries endpoint returned empty result for requested XDR storage key.
 tags: [rpc, storage, key, getLedgerEntries, rpc-error]
 soroban_version: "21.0.0"

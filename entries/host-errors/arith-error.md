@@ -3,7 +3,7 @@ id: arith-error
 title: Host Error - Integer Arithmetic Overflow, Underflow, or Division by Zero
 category: host-error
 error_code: HostError::ArithDomain
-verified: true
+verified: false
 summary: Contract execution panicked due to an arithmetic domain error such as integer overflow, underflow, or division by zero in WASM.
 tags: [arithmetic, overflow, underflow, divide-by-zero, math, host-error]
 soroban_version: "21.0.0"

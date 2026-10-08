@@ -3,7 +3,7 @@ id: invalid-chain-id
 title: CLI Error - Network Passphrase or Chain ID Mismatch
 category: cli-error
 error_code: CLI::InvalidChainId
-verified: true
+verified: false
 summary: Transaction simulation or submission rejected because the transaction network passphrase hash does not match the target Stellar node network ID.
 tags: [network, chain-id, passphrase, testnet, mainnet, futurenet, cli-error]
 soroban_version: "21.0.0"

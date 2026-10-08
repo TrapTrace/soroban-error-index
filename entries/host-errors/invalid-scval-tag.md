@@ -3,7 +3,7 @@ id: invalid-scval-tag
 title: Host Error - Invalid ScVal Tag Discriminator (Malformed Val Handle)
 category: host-error
 error_code: HostError::InvalidScValTag
-verified: true
+verified: false
 summary: Host environment rejected a value representation because the 64-bit tagged Val or ScVal discriminator byte is corrupted, unrecognized, or invalid.
 tags: [host-error, scval, val, tagged-pointer, val-tag, malformed]
 soroban_version: "21.0.0"

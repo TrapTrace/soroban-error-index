@@ -3,7 +3,7 @@ id: tx-simulation-fee-insufficient
 title: "RPC Error - Insufficient Inclusion / Resource Fee for Transaction Submission"
 category: rpc-error
 error_code: "RPC::InsufficientInclusionFee"
-verified: true
+verified: false
 summary: "Transaction envelope rejected by RPC node or Horizon because the specified base inclusion fee or resource fee is below current ledger surge requirements."
 tags: [rpc-error, fees, inclusion-fee, gas, mempool]
 soroban_version: "21.0.0"

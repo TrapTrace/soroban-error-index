@@ -3,7 +3,7 @@ id: wasm-memory-exhausted
 title: Host Error - WASM VM Memory Page Allocation Exhausted
 category: host-error
 error_code: HostError::MemoryExhausted
-verified: true
+verified: false
 summary: Contract execution halted because total WASM linear memory pages allocated at runtime exceeded the Soroban VM memory cap.
 tags: [wasm, memory, linear-memory, pages, out-of-memory, host-error]
 soroban_version: "21.0.0"

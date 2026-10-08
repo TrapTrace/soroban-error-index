@@ -3,7 +3,7 @@ id: cross-contract-reentrancy-blocked
 title: "Host Error - Cross-Contract Re-entrancy Blocked"
 category: host-error
 error_code: "HostError::ReentrancyBlocked"
-verified: true
+verified: false
 summary: "Soroban host VM detected mutual recursive invocation cycle across contract call frames without explicit reentrancy permissions."
 tags: [host-error, reentrancy, cross-contract, security, recursion]
 soroban_version: "21.0.0"

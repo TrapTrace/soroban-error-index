@@ -3,7 +3,7 @@ id: host-invalid-action
 title: Host Error - Invalid Action or Host Invariant Violation
 category: host-error
 error_code: HostError::InvalidAction
-verified: true
+verified: false
 summary: Contract execution failed because a host function was called with invalid domain arguments or violated host state invariants.
 tags: [host-error, invalid-action, host-functions, validation, crypto]
 soroban_version: "21.0.0"

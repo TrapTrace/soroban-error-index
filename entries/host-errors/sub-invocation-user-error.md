@@ -3,7 +3,7 @@ id: sub-invocation-user-error
 title: Host Error - User-Defined Contract Error in Cross-Contract Sub-Invocation
 category: host-error
 error_code: HostError::ContractUserError
-verified: true
+verified: false
 summary: Cross-contract execution reverted because the callee contract returned an explicit user-defined contract error enum discriminant.
 tags: [cross-contract, sub-invocation, custom-error, contracterror, bubbling, host-error]
 soroban_version: "21.0.0"

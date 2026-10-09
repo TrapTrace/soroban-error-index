@@ -25,3 +25,8 @@ jobs:
         run: |
           python tools/search.py "budget"
           python tools/search.py --json
+
+      - name: Verification regression tests
+        run: |
+          pip install pytest
+          python -m pytest -q

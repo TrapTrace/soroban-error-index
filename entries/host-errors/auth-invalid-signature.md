@@ -3,7 +3,7 @@ id: auth-invalid-signature
 title: Host Error - Contract Authorization Invalid Signature
 category: host-error
 error_code: HostError::AuthInvalidSignature
-verified: true
+verified: false
 summary: Transaction execution or simulation aborted because an authorization entry signature failed cryptographic verification against the required signer address or public key.
 tags: [auth, signature, ed25519, secp256k1, verification, require-auth, host-error]
 soroban_version: "21.0.0"

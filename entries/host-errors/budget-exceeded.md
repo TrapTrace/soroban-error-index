@@ -3,7 +3,7 @@ id: budget-exceeded
 title: Host Error - CPU or Memory Execution Budget Exceeded
 category: host-error
 error_code: HostError::BudgetExceeded
-verified: true
+verified: false
 summary: Contract execution terminated because CPU instruction count or memory allocation exceeded specified envelope limits.
 tags: [budget, cpu, memory, limits, host-error]
 soroban_version: "21.0.0"

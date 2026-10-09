@@ -3,7 +3,7 @@ id: unreachable-code-reached
 title: Host Error - WASM Unreachable Code Reached (Panic)
 category: host-error
 error_code: HostError::WasmUnreachable
-verified: true
+verified: false
 summary: WASM virtual machine hit an explicit panic instruction or out-of-bounds index execution.
 tags: [wasm, panic, unreachable, bounds, host-error]
 soroban_version: "21.0.0"

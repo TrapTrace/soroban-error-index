@@ -3,7 +3,7 @@ id: contract-not-found
 title: Host Error - Contract Code or Instance Not Found
 category: host-error
 error_code: HostError::ContractNotFound
-verified: true
+verified: false
 summary: Host environment failed to locate WASM executable bytecode or instance storage for given contract ID.
 tags: [contract-id, wasm, missing, deploy, host-error]
 soroban_version: "21.0.0"

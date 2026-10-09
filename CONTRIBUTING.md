@@ -25,7 +25,7 @@ Every entry in the catalog must adhere to strict schema rules and empirical repr
    title: Host Error - Storage Entry Archived or TTL Expired
    category: host-error
    error_code: HostError::EntryArchived
-   verified: true
+   verified: false
    summary: Attempted access to a persistent or instance storage entry whose Time-To-Live (TTL) has expired.
    tags: [storage, ttl, archive, state-archival, host-error]
    soroban_version: "21.0.0"
@@ -70,3 +70,5 @@ python tools/sync_explorer.py
 
 ## ⚖️ Code of Conduct
 Please be respectful and collaborative. We uphold a zero-tolerance policy against harassment or toxic behavior.
+
+Use verified: false until a valid error-specific reproduction and observed matching execution diagnostics are reviewed. Connectivity, malformed-XDR rejection and generic lookup responses do not establish error verification. PRs include Closes #<issue_id> and python3 -m pytest -q results.

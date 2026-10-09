@@ -3,7 +3,7 @@ id: option-unwrap-none
 title: Host Error - Rust Option::unwrap() Called on None in Contract Code
 category: host-error
 error_code: HostError::OptionUnwrapNone
-verified: true
+verified: false
 summary: Contract execution panicked because Option::unwrap() or Result::unwrap() was invoked on a None or Err value inside the smart contract WASM bytecode.
 tags: [host-error, unwrap, panic, option, rust, safe-rust]
 soroban_version: "21.0.0"

@@ -3,7 +3,7 @@ id: contract-data-size-exceeds-limit
 title: Host Error - Contract Data Size Exceeds Ledger Entry Limit
 category: host-error
 error_code: HostError::StorageValueExceedsLimit
-verified: true
+verified: false
 summary: Contract execution terminated because an attempted storage write or data structure serialization exceeded the maximum protocol ledger entry byte limit (64KB).
 tags: [storage, size-limit, 64kb, contract-data, payload, host-error]
 soroban_version: "21.0.0"

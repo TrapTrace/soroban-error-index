@@ -3,7 +3,7 @@ id: storage-key-size-exceeds-limit
 title: Host Error - Ledger Storage Key Size Exceeds Network Cap
 category: host-error
 error_code: HostError::StorageKeySizeLimit
-verified: true
+verified: false
 summary: Contract attempted to persist a storage entry whose key exceeds Soroban's maximum ledger key size limit (typically 64KB or protocol cap).
 tags: [storage, limits, key-size, protocol-limits, scval]
 soroban_version: "21.0.0"

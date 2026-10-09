@@ -3,7 +3,7 @@ id: temporary-storage-expired
 title: Host Error - Temporary Ledger Storage Entry Expired (TTL Evicted)
 category: host-error
 error_code: HostError::TemporaryStorageExpired
-verified: true
+verified: false
 summary: Contract attempted to read or write a temporary storage key whose time-to-live (TTL) passed without being bumped, resulting in permanent eviction.
 tags: [storage, ttl, temporary-storage, eviction, cap-0046, rent]
 soroban_version: "21.0.0"

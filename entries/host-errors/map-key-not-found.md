@@ -3,7 +3,7 @@ id: map-key-not-found
 title: Host Error - Soroban SDK Map Key Lookup Miss Panic
 category: host-error
 error_code: HostError::MapKeyNotFound
-verified: true
+verified: false
 summary: Contract execution panicked because a key lookup on a Soroban SDK Map failed to find the key and was followed by an explicit unwrap.
 tags: [host-error, map, collection, key-not-found, panic, unwrap]
 soroban_version: "21.0.0"

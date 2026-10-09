@@ -3,7 +3,7 @@ id: storage-ledger-entry-not-found
 title: Host Error - Storage Ledger Entry Not Found or Missing Value
 category: host-error
 error_code: HostError::StorageNotFound
-verified: true
+verified: false
 summary: Contract attempted to read a non-existent or uninitialized key from instance, persistent, or temporary storage without fallback handling.
 tags: [storage, ledger-entry, missing-value, persistent, temporary, instance, host-error]
 soroban_version: "21.0.0"
